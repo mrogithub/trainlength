@@ -1,12 +1,52 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab One
+      Zug Registrierung
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-list lines="none">
+    <ion-item>
+        <ion-label> S3 in Richtung </ion-label>
+        <ion-select placeholder="auswählen">
+            <ion-select-option value="pinneberg">Pinneberg</ion-select-option>
+            <ion-select-option value="neugraben">Neugraben</ion-select-option>
+          </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <ion-label> Datum </ion-label>
+    </ion-item>
+
+    <ion-item>
+          <ion-label> Uhrzeit </ion-label>
+    </ion-item>
+ 
+ </ion-list>
+
+      <section>
+        <header> Zuglänge </header>
+        <ion-button expand="block" color="medium"> Kurzzug </ion-button>
+        <ion-button expand="block" color="medium"> Vollzug </ion-button>
+        <ion-button expand="block" color="medium"> Langzug </ion-button>
+      </section>
+
+<ion-segment color="primary">
+    <ion-segment-button checked> 
+        <ion-label> Kurzzug</ion-label>
+    </ion-segment-button>
+      <ion-segment-button > 
+          <ion-label> Vollzug</ion-label>
+      </ion-segment-button>
+      <ion-segment-button > 
+            <ion-label> Langzug</ion-label>
+      </ion-segment-button>
+  </ion-segment>
+
+</ion-content>
+<!-- <ion-content>
     <ion-card class="welcome-card">
       <img src="/assets/shapes.svg" alt="" />
       <ion-card-header>
@@ -38,4 +78,4 @@
         <ion-label>Theme Your App</ion-label>
       </ion-item>
     </ion-list>
-</ion-content>
+</ion-content> -->
